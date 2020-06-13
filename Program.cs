@@ -12,10 +12,9 @@ namespace Codenation.Challenge
 
             int number = 0, controller = 1;
 
-            while (number <= 350)
+            while (number + controller <= 350)
             {
                 number = number + controller;
-                if (number > 350) { break; }
                 newNumber.Add(number);
                 controller = number - controller;
             }
